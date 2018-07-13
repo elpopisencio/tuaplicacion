@@ -32,29 +32,58 @@ const Fly = styled.div`
 	margin-top: 25vh;
   }
 `;
+const shake1 = keyframes`
+  0% { transform: rotate(-44.7deg);
+  }
+  50% { transform: rotate(-45.3deg);
+  }
+  100% { transform: rotate(-44.7deg); 
+  }
+`;
+
 const shake = keyframes`
-  0% { transform: rotate(-0.3deg);
+  0% { 
+	padding-left: 0;
+	margin-top: 89vh;
   }
-  50% { transform: rotate(0.3deg);
+  50% { 
+	padding-left: 3px;
+	margin-top: calc(89vh + 2px);
   }
-  100% { transform: rotate(-0.3deg); 
+  100% { 
+	padding-left: 0;
+	margin-top: 89vh;
   }
 `;
 
 const Image = styled.img`
-	animation: ${shake} 1s linear infinite;
+	margin-top: -15vh;
+	margin-left: -12.5vmin;
 	width: 25vmin;
+	transform: rotate(-45deg);
 	z-index: -1;
   }
 `;
 
+const rotate = keyframes`
+  0% { transform: rotate(0deg);
+  }
+  50% { transform: rotate(0deg);
+  }
+  100% { transform: rotate(45deg); 
+  }
+`;
+
 const Container = styled.div`
-	overflow: hidden;
-	margin-left: 50vw;
+	animation: ${rotate} 3s ease-out 1, ${shake} 1s linear infinite;
+	margin-left: 60vw;
+	margin-top: 89vh;
 	position: absolute;
-	width: 50vw;
-	height: 100vh;
-	background-color: orange;
+	width: 150vh;
+	height: 1vh;
+	transform: rotate(45deg); 
+	background-color: brown;
+
 	@media all and (max-aspect-ratio: 8/7) {
 		margin-left: 0;
 		width: 100vw;
@@ -66,9 +95,7 @@ export default class Rocket extends Component {
 	render() {
 		return (
 			<Container>
-				<Fly>
 					<Image src={rocket} alt="logo" />
-				</Fly>
 			</Container>
 		);
 	}
