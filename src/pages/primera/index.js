@@ -4,10 +4,17 @@ import clouds from'../../icons/clouds.svg';
 import moon from'../../icons/moon.svg';
 import Picture from './Picture';
 import Rocketo from './Rocket';
+import Clouds from './Clouds';
+import Moon from './Moon';
+import Signal from './Signal';
 import styled, { keyframes } from 'styled-components';
 
 const Pagina = styled.div`
 	 height: 100vh;
+	 width: 100vw;
+	 overflow: hidden;
+	 position: relative;
+	     background-color: cadetblue
 `;
 
 const fly = keyframes`
@@ -65,7 +72,7 @@ const RocketFly = styled.div`
   }
 `;
 
-const Moon = styled.img`
+const Mooon = styled.img`
 	 -webkit-transform: scaleX(-1);
 	 transform: scaleX(-1);
 	margin-left: 25vw;
@@ -170,7 +177,14 @@ const Fill = styled.div`
 export default class Primera extends Component {
 	render() {
 		if(true){
-			return <Rocketo/>
+			return (
+				<Pagina>
+					<Signal/>
+					<Moon/>
+				<Clouds/>
+				<Rocketo/>
+			</Pagina>
+			)
 		}
 		return (
 			<Pagina>

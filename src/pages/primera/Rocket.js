@@ -42,53 +42,56 @@ const shake1 = keyframes`
 `;
 
 const shake = keyframes`
-  0% { 
-	padding-left: 0;
-	margin-top: 89vh;
+  0% { transform: rotate(-45deg);
   }
-  50% { 
-	padding-left: 3px;
-	margin-top: calc(89vh + 2px);
+  50% { transform: rotate(-49deg);
   }
-  100% { 
-	padding-left: 0;
-	margin-top: 89vh;
+  100% { transform: rotate(-45deg); 
   }
 `;
 
 const Image = styled.img`
-	margin-top: -15vh;
-	margin-left: -12.5vmin;
+margin-top: -23vh;
+    margin-left: -9.5vmin;
 	width: 25vmin;
-	transform: rotate(-45deg);
+	transform: rotate(45deg);
 	z-index: -1;
   }
 `;
 
 const rotate = keyframes`
-  0% { transform: rotate(0deg);
+  0% { transform: rotate(-90deg);
   }
-  50% { transform: rotate(0deg);
+  50% { transform: rotate(-90deg);
   }
-  100% { transform: rotate(45deg); 
+  100% { transform: rotate(-45deg); 
   }
 `;
 
 const Container = styled.div`
-	animation: ${rotate} 3s ease-out 1, ${shake} 1s linear infinite;
-	margin-left: 60vw;
-	margin-top: 89vh;
+animation: ${rotate} 3s ease-out 1, ${shake} 1.5s 3s ease-in-out infinite;
 	position: absolute;
-	width: 150vh;
-	height: 1vh;
-	transform: rotate(45deg); 
-	background-color: brown;
+	width: 1vh;
+	height: 100vh;
+	transform: rotate(-45deg); 
+	background-image: url(http://www.clker.com/cliparts/1/6/2/0/11949852831754976415texturelegno.svg.med.png);
+	border: 1px solid #b4825f;
+    margin-top: 30vh;
+    margin-left: 90vw;
+`;
 
-	@media all and (max-aspect-ratio: 8/7) {
-		margin-left: 0;
-		width: 100vw;
-		background-color: red;
-	}
+const Stick = styled.div`
+	position: absolute;
+	transform: rotate(-90deg);
+`;
+
+const Pin = styled.div`
+	margin-top: 45vh;
+	margin-left: -1vh;
+	height: 3vh;
+	width: 3vh;
+	background-color: #f04d4e;
+	border-radius: 2vh;
 `;
 
 export default class Rocket extends Component {
@@ -96,6 +99,7 @@ export default class Rocket extends Component {
 		return (
 			<Container>
 					<Image src={rocket} alt="logo" />
+					<Pin/>
 			</Container>
 		);
 	}
