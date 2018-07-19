@@ -7,13 +7,15 @@ import Footer from './pages/Footer';
 
 const Body = styled.div`
 	font-family: 'Aldrich';
+	height: 200vh;
+	overflow: hidden;
 `;
 
 class App extends Component {
 	render() {
 		return (
 			<Body>
-				<Primera/>
+				<Segunda/>
 			</Body>
 		);
 	}

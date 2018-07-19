@@ -62,7 +62,7 @@ margin-top: -23vh;
 const rotate = keyframes`
   0% { transform: rotate(-90deg);
   }
-  50% { transform: rotate(-90deg);
+  50% { transform: rotate(-92deg);
   }
   100% { transform: rotate(-45deg); 
   }

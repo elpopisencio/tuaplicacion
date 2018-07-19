@@ -26,21 +26,21 @@ const fall = keyframes`
 `;
 
 const Container = styled.div`
-	animation: ${fall} 0.5s linear;
-	margin-top: 5vh;
-	margin-left: 5vh;
+	margin-top: 30vh;
+	margin-left: 10vw;
 	position: absolute;
-	height: 50vh;
-	width: 67vh;
-	background-color: #e4f2f9;
-	border-radius: 6vh;
-	border:1vh solid blue;
+	height: 40vh;
+	width: 57vh;
+	padding: 5vh;
+	font-size: 3em;
+	text-align: center;
 `;
 
 export default class Picture extends Component {
 	render() {
 		return (
 				<Container>
+					<p>¿Tenes un negocio o idea que necesita una aplicacion para despegar?</p>
 			</Container>
 		);
 	}

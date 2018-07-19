@@ -26,7 +26,6 @@ const Band = styled.div`
 	opacity: 0.1;
 	position: absolute;
 	transform: rotate(-45deg);
-	z-index: 2;
 `;
 
 const Container = styled.div`
@@ -39,8 +38,8 @@ export default class Picture extends Component {
 	render() {
 		return (
 				<Container>
-					<Band/>
 					<Moon src={moon} alt="logo"/>
+					<Band/>
 			</Container>
 		);
 	}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
+import Boxes from './Boxes';
+import People from './People';
 
 const Pagina = styled.div`
 	height: 100vh;
@@ -120,13 +122,21 @@ setTimeout(function(){
 console.log('before');
 },500);
 setTimeout(function(){
-    console.log('after');
+	 console.log('after');
 },500);
 }
 */
 
 export default class Segunda extends Component {
 	render() {
+		if(true){
+			return (
+				<div>
+					<People/>
+				<Boxes/>
+			</div>
+			);
+		}
 		return (
 			<Pagina id="next">
 				<Dibujo>
