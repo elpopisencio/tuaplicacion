@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import clouds from'../../icons/clouds.svg';
 import styled, { keyframes } from 'styled-components';
+import Stick from '../segunda/Stick';
 
 const wind = keyframes`
   0% { transform: rotate(-1deg);
@@ -14,19 +15,8 @@ const wind = keyframes`
   }
 `;
 
-const shake = keyframes`
-  0% { transform: rotate(-0.3deg);
-  }
-  50% { transform: rotate(0.3deg);
-  }
-  100% { transform: rotate(-0.3deg); 
-  }
-`;
-
 const Cloud = styled.img`
-	margin-top: -20vh;
-	margin-left: -10vw;
-	width: 17vw;
+	width: 35vh;
 	position: absolute;
 	@media all and (orientation: portrait) {
 		width: 34vw;
@@ -36,20 +26,27 @@ const Cloud = styled.img`
 const Container = styled.div`
 	animation: ${wind} 26s ease-in-out infinite;
 	position: absolute;
-	width: 1vh;
+	width: 35vh;
 	height: 100vh;
-	background-image: url(http://www.clker.com/cliparts/1/6/2/0/11949852831754976415texturelegno.svg.med.png);
-	margin-top: 40vh;
-	margin-left: 15vw;
-	border: 1px solid #b4825f;
+	margin-top: 20vh;
+	margin-left: 5vw;
+`;
+
+const Margins = styled.div`
+	position: absolute;
+	margin-top: 20vh;
+	margin-left: 15vh;
 `;
 
 export default class Picture extends Component {
 	render() {
 		return (
 			<Container>
-					<Cloud src={clouds} alt="logo"/>
-				</Container>
+				<Margins>
+					<Stick length={60}/>
+				</Margins>
+				<Cloud src={clouds} alt="logo"/>
+			</Container>
 		);
 	}
 }

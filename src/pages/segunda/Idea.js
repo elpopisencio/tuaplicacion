@@ -1,31 +1,20 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
-import Thinker from './Thinker';
 import Stick from './Stick';
 
 const apear = keyframes`
-  0% { margin-top: 20vh;
-  }
-  1% { margin-top: -10vh;
-  }
-  23% { margin-top: -10vh;
-  }
-  24% { margin-top: -13vh;
-  }
-  25% { margin-top: 20vh;
-  }
-  50% { margin-top: 20vh;
-  }
-  51% { margin-top: -10vh;
-  }
-  73% { margin-top: -10vh;
-  }
-  74% { margin-top: -13vh;
-  }
-  75% { margin-top: 20vh;
-  }
-  100% { margin-top: 20vh;
-  }
+  0% { margin-top: 20vh;}
+  10% { margin-top: 20vh;}
+  11% { margin-top: -10vh;}
+  33% { margin-top: -10vh;}
+  34% { margin-top: -13vh;}
+  35% { margin-top: 20vh;}
+  60% { margin-top: 20vh;}
+  61% { margin-top: -10vh;}
+  83% { margin-top: -10vh;}
+  84% { margin-top: -13vh;}
+  85% { margin-top: 20vh;}
+  100% { margin-top: 20vh;}
 `;
 
 const Image = styled.img`

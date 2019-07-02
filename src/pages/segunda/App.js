@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
-import Thinker from './Thinker';
 import Stick from './Stick';
-import box from '../../icons/box.svg';
 
 const apear = keyframes`
 	0% { margin-top: 23vh; }
-	2% { margin-top: 23vh; }
-	4% { margin-top: 0; }
-	23% { margin-top: 0; }
-	24% { margin-top: -1vh; }
-	25% { margin-top: 23vh; }
-	52% { margin-top: 23vh; }
-	54% { margin-top: 0; }
-	74% { margin-top: -1vh; }
-	75% { margin-top: 23vh; }
+	20% { margin-top: 23vh; }
+	21% { margin-top: 0; }
+	33% { margin-top: 0; }
+	34% { margin-top: -1vh; }
+	35% { margin-top: 23vh; }
+	70% { margin-top: 23vh; }
+	71% { margin-top: 0; }
+	83% { margin-top: 0; }
+	84% { margin-top: -1vh; }
+	85% { margin-top: 23vh; }
 	100% { margin-top: 23vh; }
 `;
 

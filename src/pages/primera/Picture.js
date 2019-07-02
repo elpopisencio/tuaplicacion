@@ -91,59 +91,6 @@ const Rocket = styled.img`
   }
 `;
 
-const Pregunta = styled.div`
-	margin-left: 20vmin;
-	width: 70vmin;
-	padding-top: 10vmin;
-	position: relative;
-	text-align: center;
-`;
-
-const Title = styled.h1`
-	z-index: 2;
-	color: #d7edf9;
-	margin-top: 8vw;
-	padding-top: 5vh;
-	margin-bottom: 0px;
-	font-size: 6vh;
-	position: absolute;
-	@media all and (orientation: portrait) {
-		padding-top: 0;
-		font-size: 8vw;
-  }
-`;
-
-const Boton = styled.div`
-	position: absolute;
-	background-color: #f17116;
-	 border-radius: 6vmin;
-	 padding: 2vmin;
-	 width: 30vmin;
-	 font-weight: bold;
-	 color: black;
-	 text-align: center;
-	 font-size: 5vmin;
-	 margin-top: 80vh;
-	 margin-left: calc(48vw - 15vmin);
-`;
-
-const Text = styled.div`
-	 background-color: #4F9BD9;
-	width: 45vw;
-	height: 65vh;
-	margin-top: 10vh;
-	margin-left: 10vw;
-	position: absolute;
-	text-align: center;
-	@media all and (orientation: portrait) {
-		margin-top: 0;
-		width: 80vw;
-		margin-left: 10vw;
-		height: 30vh;
-  }
-}
-`;
-
 const Pictur = styled.div`
 	overflow: hidden;
 	background-color: #4F9BD9;

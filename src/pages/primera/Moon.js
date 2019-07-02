@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import moon from'../../icons/moon.svg';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const Moon = styled.img`
 	 -webkit-transform: scaleX(-1);
@@ -32,6 +32,8 @@ const Container = styled.div`
 	margin-left: 60vw;
 	margin-top: 5vh;
 	position: absolute;
+	height: 20vh;
+	width: 20vh;
 `;
 
 export default class Picture extends Component {

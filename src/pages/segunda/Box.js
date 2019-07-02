@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled, { keyframes } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 import box from '../../icons/box.svg';
 
 const Image = styled.img`

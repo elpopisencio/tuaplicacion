@@ -2,45 +2,6 @@ import React, { Component } from 'react';
 import rocket from'../../icons/startup.svg';
 import styled, { keyframes } from 'styled-components';
 
-const fly = keyframes`
-  from { 
-		margin-left: 0vh; 
-		margin-top: 50vh;
-	}
-  to { 
-	margin-left: 25vmin;
-	margin-top: 25vh;
-  }
-`;
-
-const flyV = keyframes`
-  from { 
-		margin-left: 10vw; 
-		margin-top: 25vh;
-	}
-  to { 
-		margin-left: 28vw;
-		margin-top: 15vh;
-  }
-`;
-
-const Fly = styled.div`
-	overflow: hidden;
-	animation: ${fly} 3s ease-out 1;
-	position: absolute;
-	margin-left: 25vmin;
-	margin-top: 25vh;
-  }
-`;
-const shake1 = keyframes`
-  0% { transform: rotate(-44.7deg);
-  }
-  50% { transform: rotate(-45.3deg);
-  }
-  100% { transform: rotate(-44.7deg); 
-  }
-`;
-
 const shake = keyframes`
   0% { transform: rotate(-45deg);
   }
@@ -78,11 +39,6 @@ animation: ${rotate} 3s ease-out 1, ${shake} 1.5s 3s ease-in-out infinite;
 	border: 1px solid #b4825f;
     margin-top: 30vh;
     margin-left: 90vw;
-`;
-
-const Stick = styled.div`
-	position: absolute;
-	transform: rotate(-90deg);
 `;
 
 const Pin = styled.div`
